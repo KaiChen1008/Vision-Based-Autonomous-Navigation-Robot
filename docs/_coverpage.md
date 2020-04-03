@@ -10,5 +10,13 @@
 
 
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/KaiChen1008/Sim-to-Real-Virtual-Guidance-for-Robot-Navigation)
 [Get Started](#Intro)
+
+<!-- background image -->
+
+<!-- ![](_media/bg.png) -->
+
+<!-- background color -->
+
+<!-- ![color](#f0f0f0) -->
