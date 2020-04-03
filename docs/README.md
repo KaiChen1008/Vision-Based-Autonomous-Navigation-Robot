@@ -3,8 +3,6 @@
 > An effective, easy-to-implement, and low-cost modular framework for robot navigation tasks.
 
 
-
-
 ## Features
 
 - Automatically navigate the robot to a specific goal without any high-cost sensors.
@@ -31,4 +29,4 @@
 3. The Localization module calculates the agent’s position.
 4. The Planner module generates a path leading to the goal. This path is then communicated to the control policy module via a “virtual guide”. 
 5. The Control policy module then deploys deep reinforcement learning to control the agent. 
-6. For more details please refer to the [website](https://www.hackster.io/do-you-wanna-build-a-snowman/sim-to-real-virtual-guidance-for-robot-navigation-71e54a).
+6. For more details please refer to the [website]().
