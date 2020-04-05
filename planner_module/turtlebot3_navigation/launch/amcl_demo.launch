@@ -1,0 +1,28 @@
+<launch>
+  <!-- Turtlebot -->
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_robot.launch"/>
+  <include file="$(find turtlebot3_bringup)/launch/turtlebot3_model.launch"/>
+
+  <!-- TF -->
+  <node name="pose_tf" pkg="pose_tf" type="pose_tf_node"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_base_link_publisher" args="0 0 0 0 0 0 base_footprint base_link 100" />
+
+  <!-- Map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="/home/elsalab/Desktop/6F.yaml" />
+
+  <!-- Trajectory record -->
+  <node pkg="hector_trajectory_server" type="hector_trajectory_server" name="hector_trajectory_server" output="screen">
+    <param name="target_frame_name" type="string" value="/map" />
+    <param name="source_frame_name" type="string" value="/base_link" />
+    <param name="trajectory_update_rate" type="double" value="4" />
+    <param name="trajectory_publish_rate" type="double" value="0.25" />
+  </node>
+
+  <!-- Move base -->
+  <include file="$(find turtlebot3_navigation)/launch/move_base.launch"/>
+
+  <!-- Rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot3_navigation)/rviz/navigation.rviz"/>
+
+</launch>
+
