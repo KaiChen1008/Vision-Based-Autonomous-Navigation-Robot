@@ -29,6 +29,7 @@ import inference
 import tensorflow as tf 
 from PIL import Image as Image_pil
 import virtual_guide
+import getopt
 
 sys.path.append('/opt/ros/kinetic/lib/python2.7/dist-packages')
 class image_converter:
