@@ -29,4 +29,4 @@
 3. The Localization module calculates the agent’s position.
 4. The Planner module generates a path leading to the goal. This path is then communicated to the control policy module via a “virtual guide”. 
 5. The Control policy module then deploys deep reinforcement learning to control the agent. 
-6. For more details please refer to the [website]().
+
