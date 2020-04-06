@@ -1,5 +1,5 @@
 import pygame
-from communication import sender
+from ..utils.communication import sender
 import rospy
 import roslib
 from std_msgs.msg import Bool
