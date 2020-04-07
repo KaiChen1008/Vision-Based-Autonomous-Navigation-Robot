@@ -14,15 +14,16 @@ OS: Ubuntu 18.04
 We provide a bash script to install ROS Melodic. Please clone the following git repository and run the command.
 
 ```bash
-git clone https://github.com/KaiChen1008/install-ROS
-cd install-ROS 
-chmod +x install-ROS
-./install-ROS [ROS-keygen]
+$ git clone https://github.com/KaiChen1008/install-ROS
+$ cd install-ROS 
+$ chmod +x install-ROS
+$ ./install-ROS [ROS-keygen]
 ```
 
 !> You can find the keygen in [ROS installation website](http://wiki.ros.org/melodic/Installation/Ubuntu).
 
-![](https://i.imgur.com/aoVbqIw.png)
+<!-- ![](https://i.imgur.com/aoVbqIw.png) -->
+<img src=https://i.imgur.com/aoVbqIw.png height=400px align="middle">
 
 ---
 
@@ -30,7 +31,7 @@ chmod +x install-ROS
 
 Setup your computer to accept software from packages.ros.org
 ```bash
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
 ```
 
@@ -41,24 +42,23 @@ Find the keygen in [ROS installation website](http://wiki.ros.org/melodic/Instal
 
 Set up the ROS keygen.
 
-```
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key [KEYGEN]
+```bash
+# sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key [KEYGEN]
 ```
 
 Install ROS Melodic.
-```
-sudo apt-get install -y ros-melodic-desktop-full
+```bash
+# sudo apt-get install -y ros-melodic-desktop-full
 ```
 
 Install dependencies.
 
-```
-sudo apt-get install -y ros-melodic-desktop-full
-sudo apt-get install -y doxygen
+```bash
+# sudo apt-get install -y ros-melodic-desktop-full
+# sudo apt-get install -y doxygen
 
-
-pip install catkin_pkg
-pip3 install catkin_pkg
+$ pip install catkin_pkg
+$ pip3 install catkin_pkg
 ```
 ---
 
@@ -66,21 +66,21 @@ pip3 install catkin_pkg
 
 Initialize ROS.
 
-```
-sudo rosdep init
-rosdep update
+```bash
+$ sudo rosdep init
+$ rosdep update
 ```
 
 Set up environment.
-```
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+```bash
+$ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 
 Install dependencies.
-```
-sudo apt install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
+```bash
+$ sudo apt install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 
 
@@ -90,7 +90,7 @@ sudo apt install -y python-rosinstall python-rosinstall-generator python-wstool 
 
 Set up a catkin workspace.
 
-```
+```bash
 mkdir ~/catkin_ws
 cd ~/catkin_ws
 mkdir src

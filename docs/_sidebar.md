@@ -5,7 +5,6 @@
 
     - [ROS](Installation/ROS.md)
     - [ORB-SLAM2](Installation/ORB-SLAM2.md)
-    - [ROS](Installation/ROS.md)
     - [ZED](Installation/ZED.md)
     - [Control Policy Virtual Environment](Installation/RL.md)
     - [Perception Environment](Installation/Seg.md)
