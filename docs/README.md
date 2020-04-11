@@ -3,6 +3,8 @@
 > An effective, easy-to-implement, and low-cost modular framework for robot navigation tasks.
 
 
+[![documentation_link](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://kaichen1008.github.io/Vision-Based-Autonomous-Navigation-Robot)
+
 ## Features
 
 - Automatically navigate the robot to a specific goal without any high-cost sensors.
