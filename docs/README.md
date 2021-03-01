@@ -5,7 +5,7 @@
 
 [![documentation_link](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://kaichen1008.github.io/Vision-Based-Autonomous-Navigation-Robot)
 
-# Variants
+## Variants
 - [Single Device Version](https://github.com/KaiChen1008/Sim-to-Real-Virtual-Guidance-for-Robot-Navigation) - The original one (reveive 48 starts)
 
 
