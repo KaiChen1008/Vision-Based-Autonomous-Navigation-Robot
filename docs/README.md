@@ -1,6 +1,6 @@
 # Intro
 
-Public code for an effective, easy-to-implement, and low-cost modular framework for robot navigation tasks.
+Public code for Vision-Based-Autonomous-Navigation-Robot. We provide an clustering-based, effective, easy-to-implement, and low-cost modular framework for robot navigation tasks.
 
 
 [![documentation_link](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://kaichen1008.github.io/Vision-Based-Autonomous-Navigation-Robot)
