@@ -26,7 +26,7 @@ We highly suggest to use the single-device one which is easier to install.
 - Python 2.7.17 or higher
 - Python 3.5 or higher
 
-!> Both versions of Python required.
+> Both versions of Python required.
 
 ## How It Works
 
